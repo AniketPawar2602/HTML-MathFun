@@ -1,0 +1,276 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 1050px;
+    margin: 0px auto;
+    height: auto;
+}
+
+.header{
+    position: sticky;
+    top: 0px;
+    background-color: white;
+}
+
+.brand{
+    float: left;
+}
+
+h1 a{
+    text-decoration: none;
+    font-size: 50px;
+    font-weight: 100;
+    color: #881BBF;
+}
+
+.searchBox{
+    float: right;
+    background: linear-gradient(#E4F289,#B7E953);
+    width: 400px;
+    height: 50px;
+    padding: 20px 20px 0px 20px;
+    margin: 20px 0px;
+}
+
+.text{
+    float: left;
+    width: 200px;
+    padding: 5px;
+    font-size: 15px;
+    color: #E36A0C;
+    background: white url(search.png) center right no-repeat;
+    border: 1px solid #b7e953;
+}
+
+.submit{
+    float: right;
+    font-weight: bold;
+    padding: 5px;
+    color: white;
+    background: #A751D6;
+    font-size: 15px;
+}
+
+.submit:hover{
+    background: red;
+}
+
+.clear{
+    clear: both;
+}
+
+.menu{
+    height: 70px;
+    background: linear-gradient(#F8F594,#D5D533);
+    padding: 7px 0;
+}
+
+ul{
+    list-style: none;
+}
+
+.menu ul li{
+    float: left;    
+    padding: 0px 30px;
+    height: 30px;
+    border-right: 1px solid #5d12e7;
+}
+
+.menu ul li:last-child{
+    border-right: none;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #5d12e7;
+    line-height: 30px;
+    transition: font-size 0.3s ease;
+}
+
+.menu ul li a:hover, .menu ul li a.active{
+    font-size: 20px;
+    font-weight: bold;
+    color: #B314DB;
+}
+
+.introduction{
+    background: linear-gradient(#E5F2BB, #B7E952);
+    padding: 30px;
+    margin: 16px 0px;
+}
+
+.introduction h3{
+    font-size: 45px;
+    color: #316901;
+    font-weight: normal;
+}
+
+.introduction p{
+    font-size: 25px;
+    color: #628F19;
+    text-align: justify;
+}
+
+.sidebar{
+    width: 450px;
+    height: 500px;
+    border: 1px solid #BAF46F;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    font-size: 22px;
+    color: #5d12e7;
+}
+
+.sidebar ul li a:hover, .sidebar ul li a.active{
+    text-decoration: none;
+    font-size: 25px;
+    color: #B314DB;
+    font-weight: bold;
+    transition: font-size 0.3s ease;
+}
+
+#leftsidebar{
+    float: left;
+}
+
+.sidebar ul{    
+    padding-top: 9px;
+}
+
+#leftsidebar ul{
+    padding-left: 70px;
+}
+
+#leftsidebar ul li{
+    padding-bottom: 6px;
+    padding-left: 10px;
+    list-style-image: url(right-arrow.png);
+}
+
+#leftsidebar h3{
+    color: #B314DB;
+    font-size: 30px;
+}
+
+#rightsidebar{
+    float: right;
+}
+
+#rightsidebar h3{
+    color: #B314DB;
+    font-size: 30px;
+}
+
+#rightsidebar ul{
+    padding-left: 70px;
+}
+
+#rightsidebar ul li{
+    padding-bottom: 20px;
+    padding-left: 10px;
+    list-style-image: url(check-mark.png);
+}
+
+.footer{
+    height: 50px;
+    border: 1px solid green;
+    padding: 10px 30px;
+    margin-top: 15px;
+    background: linear-gradient(#E4F289,#B7E953);
+}
+
+/* For Desktop View */
+@media screen and (min-width: 1024px) {
+    .gfg-div {
+        background-color: #63c971;
+        color: #fff;
+    }
+}
+ 
+/* For Tablet View */
+@media screen and (min-device-width: 768px)
+    and (max-device-width: 1024px) {
+    .gfg-div {
+        width: 400px;
+        height: 400px;
+        background-color: orange;
+        color: black;
+    }
+}
+ 
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 480px)
+    and (orientation: portrait) {
+    .gfg-div {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        color: #fff;
+    }
+}
+ 
+/* For Mobile Landscape View */
+@media screen and (max-device-width: 640px)
+    and (orientation: landscape) {
+    .gfg-div {
+        width: 400px;
+        height: 200px;
+        background-color: cyan;
+        color: black;
+    }
+}
+ 
+/* For Mobile Phones Portrait or Landscape View */
+@media screen
+    and (max-device-width: 640px) {
+    .gfg-div {
+        width: 400px;
+        height: 200px;
+        background-color: chartreuse;
+        color: black;
+    }
+}
+ 
+/* For iPhone 4 Portrait or Landscape View */
+@media screen and (min-device-width: 320px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+    .gfg-div {
+        width: 400px;
+        height: 400px;
+        background-color: brown;
+        color: black;
+    }
+}
+ 
+/* For iPhone 5 Portrait or Landscape View */
+@media (device-height: 568px)
+    and (device-width: 320px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+    .gfg-div {
+        width: 400px;
+        height: 400px;
+        background-color: cornflowerblue;
+        color: black;
+    }
+}
+ 
+/* For iPhone 6 and 6 plus Portrait or Landscape View */
+@media (min-device-height: 667px)
+    and (min-device-width: 375px)
+    and (-webkit-min-device-pixel-ratio: 3) {
+    .gfg-div {
+        width: 400px;
+        height: 400px;
+        background-color: darkgoldenrod;
+        color: black;
+    }
+};
